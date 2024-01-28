@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>signup</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/styel.css" />
+  </head>
+  <body>
+    <section>
+      <div class="body bg-dark py-5 min-vh-100">
+        <div class="container">
+          <form>
+            <div class="head">
+              <span>Sign up</span>
+              <p>Create a free account with your email.</p>
+            </div>
+            <div class="inputs">
+              <input id="signInName" type="text" placeholder="Full Name" />
+              <div id="nameDiv" class="d-none ">Enter your Name </div>
+              <input id="signInEmail" type="email" placeholder="Email" />
+              <div id="emailDiv"  class="d-none">Enter your Email >(@email.com) </div>
+              <input
+                id="signInPassword"
+                type="password"
+                placeholder="Password"
+              />
+              <div id="passwordDiv" class="d-none">more than 8 number</div>
+            </div>
+            <button><a id="signIn" href="#">Sign up</a></button>
+          </form>
+          <div class="form-footer">
+            <p>Have an account? <a href="#">Log in</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

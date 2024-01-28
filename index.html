@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="imag/logo.png" type="image/x-icon" />
+    <title>Yummy</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section id="load">
+      <div
+        class="loadding d-flex justify-content-center align-items-center bg-dark"
+      >
+        <span class="loader"></span>
+      </div>
+    </section>
+    <section>
+      <div
+        id="mySidenav"
+        class="sidenav d-flex justify-content-between flex-column align-content-between align-items-center"
+      >
+        <div class="">
+          <a id="search-button" href="#">Search</a>
+          <a id="search-categor" href="#">Categories</a>
+          <a id="search-area" href="#">Area</a>
+          <a id="search-ingrad" href="#">Ingredients</a>
+          <a id="contact-us" href="sgin in/index.html">Contact Us</a>
+        </div>
+        <!-- nav footer -->
+        <div class="foot text-white">
+          <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-solid fa-globe"></i>
+          </div>
+          <div class="copy">
+            <p>Copyright Â© 2019 All Rights <br />Reserved.</p>
+          </div>
+        </div>
+      </div>
+      <div
+        id="main"
+        class="bg-white mt-3 d-flex justify-content-between flex-column align-content-between align-items-center d-block"
+      >
+        <div><img class="w-100" src="imag/logo.png" alt="logo" /></div>
+        <span onclick="toggleNav()"
+          ><i id="incor" class="fa-solid fa-bars fa-2xl"></i
+        ></span>
+        <div>
+          <i class="fa-solid fa-globe"></i>
+          <i class="fa-solid fa-share-nodes"></i>
+        </div>
+      </div>
+      <div class="contant min-vh-100 w-100 show-all-meal">
+        <div class="d-none" id="Search">
+          <div class="d-flex py-5 justify-content-center">
+            <input
+              class="mx-4 w-25 p-1 form-text"
+              type="text"
+              name=""
+              id="search-name"
+              placeholder="Search Meal Name...."
+            />
+            <input
+              class="mx-4 w-25 p-1"
+              type="number"
+              name=""
+              id="search-frist"
+              placeholder="Search Meal Frist Letter"
+            />
+          </div>
+          <div class="row py-4 min-vh-100 w-100" id="row-Search"></div>
+        </div>
+        <div class="bg-dark">
+          <div class="container-fluid">
+            <div class="row py-4 g-3 min-vh-100 w-100" id="row"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="data-meal position-absolute d-none min-vh-100 w-100 bg-dark text-white">
+      <div class="container" id="showdata">
+
+      </div>
+    </section>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
